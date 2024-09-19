@@ -77,7 +77,7 @@ def fetch_emails(user_email, user_password):
     return phishing_results
 
 # API endpoint to detect phishing
-@app.route('/check-emails', methods=['POST'])
+@app.route('/')
 def check_emails():
     data = request.get_json()
     user_email = data.get('email')
