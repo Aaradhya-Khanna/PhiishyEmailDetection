@@ -46,7 +46,7 @@ def fetch_emails(user_email, user_password):
     phishing_results = []
 
     # Check the most recent 5 emails
-    for email_id in email_list[-1:]:
+    for email_id in email_list[-10:]:
         status, data = mail.fetch(email_id, '(RFC822)')
         for response_part in data:
             if isinstance(response_part, tuple):
