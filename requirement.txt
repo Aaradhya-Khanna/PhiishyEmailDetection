@@ -1,8 +1,4 @@
 Flask
-gunicorn
+Gunicorn
+beautifulsoup4
 flask_cors
-numpy
-opencv-python
-tensorflow
-pytesseract
-scikit-learn
